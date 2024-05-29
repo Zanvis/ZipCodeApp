@@ -5,4 +5,4 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ![image](https://github.com/Zanvis/ZipCodeApp/assets/161169953/115dcc35-78bb-4c01-8e50-89acddc60ece)
 ![image](https://github.com/Zanvis/ZipCodeApp/assets/161169953/0756afd9-0ea9-4ba2-8a0a-47fa2c9557df)
 ![image](https://github.com/Zanvis/ZipCodeApp/assets/161169953/693bae91-e55c-40fa-b84c-38aa56eafa9a)
-![image](https://github.com/Zanvis/ZipCodeApp/assets/161169953/41156402-07b3-40bb-aebf-e6aacef90087)
+![image](https://github.com/Zanvis/ZipCodeApp/assets/161169953/b0eb2f04-b662-45a0-9aa0-1d4e1ffad3c9)
