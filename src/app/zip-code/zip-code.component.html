@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row">
+        <input (keydown.enter)="fetchZipCode(zipCode.value)" class="form-control w-100" type="text" placeholder="Enter a zip code" #zipCode>
+    </div>
+    <div class="row mt-2">
+        <div class="col-sm-3 col-4 p-0">
+            <button class="btn btn-primary" (click)="$event.preventDefault(); fetchZipCode(zipCode.value)">Get Info</button>
+        </div>
+        <div class="col-sm-9 col-8 p-0">
+            <select class="form-select" [(ngModel)]="country" (ngModelChange)="fetchValue($event)">
+                <option *ngFor="let country of country_codes | keyvalue" [value]="country.value">{{ country.key }}</option>
+            </select>
+        </div>
+    </div>
+    <div class="row mt-2 form-control w-auto" *ngIf="codeData">
+        <div class="row" *ngFor="let key of objectKeys(codeData); let last = last">
+            <ng-container *ngIf="!last">
+                <p><strong>{{ key }}:</strong> {{ codeData[key] }}</p>
+            </ng-container>
+        </div>
+        <div class="row" *ngIf="codeData.places">
+            <div *ngFor="let place of codeData.places">
+                <div class="" *ngFor="let placeKey of objectKeys(place)">
+                    <p><strong>{{ placeKey }}:</strong> {{ place[placeKey] }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
