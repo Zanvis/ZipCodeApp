@@ -23,9 +23,11 @@
                 <div class="" *ngFor="let placeKey of objectKeys(place)">
                     <p><strong>{{ placeKey }}:</strong> {{ place[placeKey] }}</p>
                 </div>
+                <div class="d-flex justify-content-between">
+                    <a href="{{ getLink(codeData, 'google') }}" target="_blank">Google Maps</a>
+                    <a href="{{ getLink(codeData, 'oepnstreet') }}" target="_blank">OpenStreetMap</a>
+                </div>
             </div>
-            <a href="{{ getLink(codeData, 'google') }}" target="_blank">Google Maps</a>
-            <a href="{{ getLink(codeData, 'oepnstreet') }}" target="_blank">OpenStreetMap</a>
         </div>
     </div>
 </div>
