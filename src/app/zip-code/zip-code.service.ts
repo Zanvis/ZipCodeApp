@@ -1,17 +1,27 @@
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable, catchError, throwError } from 'rxjs';
+import { Observable, catchError, of, tap, throwError } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ZipCodeService {
-
+  private cache: { [key: string]: any } = {};
   constructor(private http: HttpClient) {}
 
-  getData(country: string, code: string): Observable<any>{
-    const url = "https://api.zippopotam.us/" + country + "/" + code;
-    return this.http.get(url).pipe(catchError(this.handleError));
+  getData(country: string, code: string): Observable<any> {
+    const cacheKey = `${country}-${code}`;
+    if (this.cache[cacheKey]) {
+      console.log("cache");
+      return of(this.cache[cacheKey]);
+    }
+    const url = `https://api.zippopotam.us/${country}/${code}`;
+    return this.http.get(url).pipe(
+      tap(data => {
+        this.cache[cacheKey] = data;
+      }),
+      catchError(this.handleError)
+    );
   }
 
   private handleError(error: HttpErrorResponse) {
