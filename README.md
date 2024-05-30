@@ -1,4 +1,5 @@
 # ZipCodeApp
+Live test: https://zanvis.github.io/test/
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.1.
 ![image](https://github.com/Zanvis/ZipCodeApp/assets/161169953/33bdedb6-0822-4b64-aaca-9666dfeea3e1)
