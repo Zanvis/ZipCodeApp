@@ -12,7 +12,6 @@ export class ZipCodeService {
   getData(country: string, code: string): Observable<any> {
     const cacheKey = `${country}-${code}`;
     if (this.cache[cacheKey]) {
-      console.log("cache");
       return of(this.cache[cacheKey]);
     }
     const url = `https://api.zippopotam.us/${country}/${code}`;
