@@ -1,27 +1,8 @@
 # ZipCodeApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.1.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+![image](https://github.com/Zanvis/ZipCodeApp/assets/161169953/e901f0b2-50b8-437b-acd3-be35f69c7c3f)
+![image](https://github.com/Zanvis/ZipCodeApp/assets/161169953/a9da12ff-a266-4311-a83b-45f948269e23)
+![image](https://github.com/Zanvis/ZipCodeApp/assets/161169953/3f8eb0ac-ff54-48d2-9e83-6180c4fb1e3d)
+![image](https://github.com/Zanvis/ZipCodeApp/assets/161169953/693bae91-e55c-40fa-b84c-38aa56eafa9a)
+![image](https://github.com/Zanvis/ZipCodeApp/assets/161169953/b0eb2f04-b662-45a0-9aa0-1d4e1ffad3c9)
