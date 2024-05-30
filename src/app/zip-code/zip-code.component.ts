@@ -12,7 +12,7 @@ import { ZipCodeService } from './zip-code.service';
 })
 export class ZipCodeComponent {
   code: string = "";
-  codeData: any = {};
+  codeData: any = !{};
   country_codes: { [key: string]: string } = {
     "Andorra": "AD",
     "Argentina": "AR",
@@ -93,12 +93,11 @@ export class ZipCodeComponent {
   }
   
   fetchZipCode(code: string) {
-    console.log(code);
-    console.log(this.country);
     this.zipService.getData(this.country, code).subscribe({
       next: (data: any) => {
         this.codeData = data;
-        console.log(this.codeData);
+        // console.log(this.codeData);
+        // console.log(this.getLink(this.codeData));
       },
       error: (error: any) => {
         alert(error.message);
@@ -107,6 +106,12 @@ export class ZipCodeComponent {
         console.log('Data fetch complete');
       }
     });
+  }
+  getLink(codeData: any, map : string) {
+    this.codeData = codeData;
+    if (map == "google")
+      return `https://www.google.com/maps/place/${this.codeData['post code']}+${this.codeData['places'][0]['place name']}/@${this.codeData['places'][0]['latitude']}.${this.codeData['places'][0]['longitude']}`
+    return `https://www.openstreetmap.org/search?query=${this.codeData['post code']}#map=${this.codeData['places'][0]['latitude']}/${this.codeData['places'][0]['longitude']}`
   }
   objectKeys(obj: any): string[] {
     return Object.keys(obj);
