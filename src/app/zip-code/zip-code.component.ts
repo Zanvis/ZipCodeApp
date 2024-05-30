@@ -96,8 +96,6 @@ export class ZipCodeComponent {
     this.zipService.getData(this.country, code).subscribe({
       next: (data: any) => {
         this.codeData = data;
-        // console.log(this.codeData);
-        // console.log(this.getLink(this.codeData));
       },
       error: (error: any) => {
         alert(error.message);
@@ -109,7 +107,7 @@ export class ZipCodeComponent {
   }
   getLink(codeData: any, map : string) {
     this.codeData = codeData;
-    if (map == "google")
+    if (map === "google")
       return `https://www.google.com/maps/place/${this.codeData['post code']}+${this.codeData['places'][0]['place name']}/@${this.codeData['places'][0]['latitude']}.${this.codeData['places'][0]['longitude']}`
     return `https://www.openstreetmap.org/search?query=${this.codeData['post code']}#map=${this.codeData['places'][0]['latitude']}/${this.codeData['places'][0]['longitude']}`
   }

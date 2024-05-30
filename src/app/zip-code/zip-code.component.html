@@ -21,7 +21,7 @@
         <div class="row" *ngIf="codeData.places">
             <div *ngFor="let place of codeData.places">
                 <div class="" *ngFor="let placeKey of objectKeys(place)">
-                    <p><strong>{{ placeKey }}:</strong> {{ place[placeKey] }}</p>
+                    <p *ngIf="place[placeKey] === '' ? place[placeKey] = '-': place[placeKey]"><strong>{{ placeKey }}:</strong> {{ place[placeKey] }}</p>
                 </div>
                 <div class="d-flex justify-content-between">
                     <a href="{{ getLink(codeData, 'google') }}" target="_blank">Google Maps</a>
