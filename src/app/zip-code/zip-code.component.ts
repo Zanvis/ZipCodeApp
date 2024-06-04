@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ZipCodeService } from './zip-code.service';
 
@@ -85,17 +85,20 @@ export class ZipCodeComponent {
     "Mayotte": "YT",
     "South Africa": "ZA"
   }
+  
   constructor(private zipService: ZipCodeService) { }
 
   country: string = "PL";
   fetchValue(value: any) {
     this.country = value;
   }
-  
+  @Output() 
+  onData: EventEmitter<any> = new EventEmitter<any>();
   fetchZipCode(code: string) {
     this.zipService.getData(this.country, code).subscribe({
       next: (data: any) => {
         this.codeData = data;
+        this.onData.emit(this.codeData);
       },
       error: (error: any) => {
         alert(error.message);

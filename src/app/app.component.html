@@ -1,4 +1,7 @@
 <h1 class="text-center mt-3">Zip Code App</h1>
 <div class="container d-flex justify-content-center mt-3">
-  <zip-code></zip-code>
+  <zip-code (onData) = "setData($event)"></zip-code>
+</div>
+<div class="container d-flex justify-content-center mt-3">
+    <google-maps *ngIf="AllData" [latitude]="AllData['places'][0]['latitude']" [longitude]="AllData['places'][0]['longitude']" ></google-maps>
 </div>
