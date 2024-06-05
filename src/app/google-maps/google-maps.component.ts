@@ -20,6 +20,7 @@ export class GoogleMapsComponent {
   mapOptions: google.maps.MapOptions = {
     center: { lat: 0, lng: 0 },
     zoom: 14,
+    controlSize: 22
   };
 
   selectedLocation: google.maps.LatLngLiteral = { lat: 0, lng: 0 };
