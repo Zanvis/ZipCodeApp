@@ -4,8 +4,8 @@ Live test (without google maps preview): https://zanvis.github.io/test/
 To make google maps preview function work, you have to put your google maps api key in src/index.html
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.1.
-![image](https://github.com/Zanvis/ZipCodeApp/assets/161169953/d30c19dd-c942-4a32-844a-94f684e3fae3)
-![image](https://github.com/Zanvis/ZipCodeApp/assets/161169953/b7033825-31a0-4632-8116-930cd0b93965)
-![image](https://github.com/Zanvis/ZipCodeApp/assets/161169953/908f8721-d2cc-488c-b714-eb36c843233d)
-![image](https://github.com/Zanvis/ZipCodeApp/assets/161169953/ef6e1e91-8e0e-4947-a827-a1e1f7d9d46c)
-![image](https://github.com/Zanvis/ZipCodeApp/assets/161169953/ee3ea516-295e-47a8-87b6-e7c6fd8f2279)
+![image](https://github.com/Zanvis/ZipCodeApp/assets/161169953/274871f5-d08b-4874-9f30-37c7c4bf40a2)
+![image](https://github.com/Zanvis/ZipCodeApp/assets/161169953/7f10fb8d-b6db-4eba-845d-29a5709c54ec)
+![image](https://github.com/Zanvis/ZipCodeApp/assets/161169953/78505157-7189-47dd-9649-998575c3ac0b)
+![image](https://github.com/Zanvis/ZipCodeApp/assets/161169953/cd62e1ac-6fab-4549-ba55-7ecb42e8bf3d)
+![image](https://github.com/Zanvis/ZipCodeApp/assets/161169953/25a0fb5e-738b-4ef2-93cb-dac6e8bcf105)
