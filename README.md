@@ -5,7 +5,7 @@ To make google maps preview function work, you have to put your google maps api 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.1.
 ![image](https://github.com/Zanvis/ZipCodeApp/assets/161169953/d30c19dd-c942-4a32-844a-94f684e3fae3)
-![image](https://github.com/Zanvis/ZipCodeApp/assets/161169953/28a5ea02-4b56-4290-b73a-9baff7d88106)
-![image](https://github.com/Zanvis/ZipCodeApp/assets/161169953/0b4142db-5f6b-45f2-b3e2-24ab87053670)
-![image](https://github.com/Zanvis/ZipCodeApp/assets/161169953/541a9312-9281-46e6-98fa-b99e24555da0)
-![image](https://github.com/Zanvis/ZipCodeApp/assets/161169953/cb44f173-5f12-4829-b0c2-055647af32ef)
+![image](https://github.com/Zanvis/ZipCodeApp/assets/161169953/b7033825-31a0-4632-8116-930cd0b93965)
+![image](https://github.com/Zanvis/ZipCodeApp/assets/161169953/908f8721-d2cc-488c-b714-eb36c843233d)
+![image](https://github.com/Zanvis/ZipCodeApp/assets/161169953/ef6e1e91-8e0e-4947-a827-a1e1f7d9d46c)
+![image](https://github.com/Zanvis/ZipCodeApp/assets/161169953/ff9bdaef-1435-4d72-91b9-b137a05ef50b)
