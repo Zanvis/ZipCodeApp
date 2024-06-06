@@ -1,0 +1,4 @@
+<button class="btn btn-primary" (click)="toggleTheme()">
+    <ng-container *ngIf="!dark"><i class="bi bi-sun-fill"></i> Light</ng-container>
+    <ng-container *ngIf="dark"><i class="bi bi-moon-stars-fill"></i> Dark</ng-container>
+</button>
