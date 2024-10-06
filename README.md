@@ -3,6 +3,10 @@ Live test (without google maps preview): https://zanvis.github.io/test/
 
 To make google maps preview function work, you have to put your google maps api key in src/index.html
 
+
+https://github.com/user-attachments/assets/0174fa48-5784-4a14-8a0c-ea3c95cd48b7
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.1.
 ![image](https://github.com/Zanvis/ZipCodeApp/assets/161169953/274871f5-d08b-4874-9f30-37c7c4bf40a2)
 ![image](https://github.com/Zanvis/ZipCodeApp/assets/161169953/7f10fb8d-b6db-4eba-845d-29a5709c54ec)
