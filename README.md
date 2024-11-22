@@ -1,5 +1,5 @@
 # ZipCodeApp
-Live test (without google maps preview): https://zanvis.github.io/test/
+Live test (without google maps preview): https://zanvis.github.io/ZipCodeApp/
 
 To make google maps preview function work, you have to put your google maps api key in src/index.html
 
